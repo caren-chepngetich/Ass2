@@ -2,37 +2,44 @@ fun main(){
   words("Barnie bakes brown bagels and buns")
     my(20,30,40)
     volume(21)
+    isPalindrome("Kayak")
 }
 //Question 1
 fun words(name:String){
-var words.split[b]
-    println("Barnie bakes brown bagels and buns")
+
+var newName = name.replace("b","")
+
+
 
 }
 
 //Question 2
 
-fun my(num1:Int,num2:Int,num3:Int):Int{
-   var sum = num1 + num2 + num3
-   var count = (sum.)
-    var average = (sum.a)
+fun intArray(numbers:Array<Int>){
+   for (x in numbers)
+       var sum = numbers.sum()
+   var count = numbers.count()
+    var average = numbers.average()
+
 }
 
 //Question 3
 
-fun volume(num:Int){
+fun volume(radius:Double){
     var radius = 3.14159
 println(volume)
 }
 
 //Questin 4
 fun isPalindrome(word:String):Boolean{
-    var word = "Kayak"
-    if word is a palindrome{
+    var newWord=word.reversed()
+    if (newWord==word) {
         println(true)
-
+        return true
     }
+
     else{
         println(false)
+        return false
     }
 }
